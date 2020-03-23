@@ -15,7 +15,7 @@ import java.util.Collections;
         public void run() {
             while(stringIterator.hasNext()){
                 String next = stringIterator.next();
-                Integer[] array = new Integer[9999];
+                Integer[] array = new Integer[3000];
                 for (int i = 0; i < array.length; i++){
                     array[i] = (int) (Math.random() * ((600000 - 1) + 1));
                 }
@@ -28,7 +28,6 @@ import java.util.Collections;
                 Arrays.sort(array);
                 Arrays.sort(array, Collections.reverseOrder());
                 copied += next + " ";
-
             }
         }
     }

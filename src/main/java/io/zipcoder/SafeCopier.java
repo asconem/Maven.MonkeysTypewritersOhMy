@@ -18,13 +18,11 @@ public class SafeCopier extends Copier {
     public void run() {
 
         while(stringIterator.hasNext()){
-
             lock.lock();
             String next = stringIterator.next();;
 
             copied += next + " ";
             lock.unlock();
-
         }
     }
 }
